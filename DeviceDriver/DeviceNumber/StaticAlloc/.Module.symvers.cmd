@@ -1,0 +1,1 @@
+cmd_/home/anonymous-coder/Desktop/DeviceDriver/DeviceNumber/StaticAlloc/Module.symvers := sed 's/ko$$/o/' /home/anonymous-coder/Desktop/DeviceDriver/DeviceNumber/StaticAlloc/modules.order | scripts/mod/modpost -m -a   -o /home/anonymous-coder/Desktop/DeviceDriver/DeviceNumber/StaticAlloc/Module.symvers -e -i Module.symvers   -T -

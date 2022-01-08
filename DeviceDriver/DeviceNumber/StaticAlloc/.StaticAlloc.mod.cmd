@@ -1,0 +1,1 @@
+cmd_/home/anonymous-coder/Desktop/DeviceDriver/DeviceNumber/StaticAlloc/StaticAlloc.mod := { echo  /home/anonymous-coder/Desktop/DeviceDriver/DeviceNumber/StaticAlloc/StaticAlloc.o;  echo; } > /home/anonymous-coder/Desktop/DeviceDriver/DeviceNumber/StaticAlloc/StaticAlloc.mod

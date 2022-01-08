@@ -1,0 +1,1 @@
+cmd_/home/anonymous-coder/Desktop/DeviceDriver/DeviceNumber/StaticAlloc/modules.order := {   echo /home/anonymous-coder/Desktop/DeviceDriver/DeviceNumber/StaticAlloc/StaticAlloc.ko; :; } | awk '!x[$$0]++' - > /home/anonymous-coder/Desktop/DeviceDriver/DeviceNumber/StaticAlloc/modules.order

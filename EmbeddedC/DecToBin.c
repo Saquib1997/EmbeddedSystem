@@ -14,9 +14,9 @@ int main()
             a=a/2;
         }
         printf("The Binary equivalent of the number %d is: ",n);
-        for (i-1; i>=0; i--)
+        for (a=i-1; a>=0; a--)
         {
-            printf("%d",bin[i]);
+            printf("%d",bin[a]);
         }
         printf("\n");
         return 0;

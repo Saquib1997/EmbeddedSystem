@@ -63,6 +63,27 @@ void DeleteEnd(){
         }
 }
 
+void InsertLoc(int loc, int n){
+    int i;
+    struct node *temp, *temp2;
+    temp = (struct node *)malloc(sizeof(struct node));
+    temp->data = n;
+    temp->link = NULL;
+    temp2 = head;
+    loc -= 1;
+    for(i=loc; i>=2; i--){
+        temp2 = temp2->link;
+        
+    }
+    temp->link = temp2->link;
+    temp2->link = temp;
+    
+}
+
+void DeleteLoc(int n){
+    
+}
+
 void PrintList(void){
     if(head == NULL)
         printf("The Singly Linked List is Empty\n");
@@ -80,7 +101,7 @@ void PrintList(void){
 
 int main()
 {
-    int i, n;
+    int i, n, loc;
 
     while(1){
         printf("\nList Operations\n");
@@ -88,7 +109,10 @@ int main()
         printf("2.Insert at End\n");
         printf("3.Delete from Beginning\n");
         printf("4.Delete from End\n");
-        printf("5.Printing and Traversing\n");
+        printf("5.Insert at a specific location\n");
+        printf("6.Delete from a specific location\n");
+        printf("7.Printing and Traversing\n");
+        printf("8.Exit\n");
         printf("Enter your choice : ");
         if(scanf("%d",&i)<=0){
             printf("Enter only an Integer\n");
@@ -97,12 +121,12 @@ int main()
     else{
         switch (i){
             case 1:
-            printf("Enter the number to insert at the beginning : ");
+            printf("Enter the data to insert at the beginning : ");
             scanf("%d",&n);
             InsertBeg(n);
             break;
             case 2:
-            printf("Enter the number to insert at the beginning : ");
+            printf("Enter the data to insert at the beginning : ");
             scanf("%d",&n);
             InsertEnd(n);
             break;
@@ -113,7 +137,22 @@ int main()
             DeleteEnd();
             break;
             case 5:
+            printf("Enter the location where you want to Insert node : ");
+            scanf("%d",&loc);
+            printf("Enter the data to insert at location %d : ",loc);
+            scanf("%d",&n);
+            InsertLoc(loc, n);
+            break;
+            case 6:
+            printf("Enter the location from where you want to Delete node : ");
+            scanf("%d",&loc);
+            DeleteLoc(loc);
+            break;
+            case 7:
             PrintList();
+            break;
+            case 8:
+            exit(0);
             break;
             }
 

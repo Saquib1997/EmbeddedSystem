@@ -18,3 +18,9 @@
     - **_int printf( const char *restrict format, ... );_**
     - The ... or ellipses indicate that there are a variable number of argument in printf function.
     - we would use the va_start, va_arg, va_end macros and va_list type to access the arguments.
+
+    ---
+
+    ### 3. What is the function prototype of scanf()?
+
+    -

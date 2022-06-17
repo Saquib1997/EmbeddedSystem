@@ -13,9 +13,9 @@
 ### 2. What is the Function prototype of printf()?
 
 - printf is a VARIADIC function.
-- printf is declared and its prototype is present inside the header file i.e. <stdio.h> and defination is present in libc.so gcc library
+- printf is declared and its prototype is present inside the header file i.e. <stdio.h> and definition is present in libc.so gcc library
 - The function prototype of the printf function is: 
-    - **_int printf( const char *restrict format, ... );_**
+    - **_int printf( const char *format, ... );_**
     - The ... or ellipses indicate that there are a variable number of argument in printf function.
     - we would use the va_start, va_arg, va_end macros and va_list type to access the arguments.
 
@@ -23,4 +23,9 @@
 
 ### 3. What is the function prototype of scanf()?
 
--
+- scanf is a VARIADIC function.
+- scanf is declared and its prototype is present inside the header file i.e. <stdio.h> and definition is present in libc.so gcc library
+- The function prototype of the scanf function is:
+    - **_int scanf(const char *format, ...);_**
+    - The ... or ellipses indicate that there are a variable number of argument in printf function.
+    - we would use the va_start, va_arg, va_end macros and va_list type to access the arguments.

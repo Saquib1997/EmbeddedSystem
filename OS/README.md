@@ -1,6 +1,6 @@
 ## Embedded Operating systems
 
-...
+***
 
 ## Tools
 
@@ -10,7 +10,7 @@
 - Draw IO
 - Visual Studio Code
 
-...
+---
 
 ## C
 
@@ -20,6 +20,8 @@
 - Declaration => Function prototype
 - Defination
 
+---
+
 ## Libraries
 
 - Static library (.a) => Utility used to create it is archive
@@ -27,10 +29,14 @@
 
 - While using the libraries => -lname_of_library, -Lpath_of_library
 
+---
+
 ## PID and PPID
 
 - getpid()
 - getppid()
+
+---
 
 ## Concepts
 - Address space
@@ -40,6 +46,8 @@
 - Segmentation and Debugging a code
 - PCB(Process Control Block) => Data structure to hold the information about the process.
 
+---
+
 ## System calls vs Library calls
 - open, read, write, close
 ## Fork
@@ -48,6 +56,8 @@
 
 ## FIFO
 
+---
+
 ## Process States 
 - Create
 - Ready
@@ -55,7 +65,14 @@
 - Waiting
 - Exit
 
+---
+
 ## Threads
+- MultiThreading
+- Use manual pages of any predefined function to check out its arguments, return type and the working
+- For threads API we use, **man pthread_create** 
+
+---
 
 ## Multi *
 - Batch OS
@@ -64,8 +81,27 @@
 - Multiprocessor OS
 - Multiuser OS
 
+---
+
 ## Valgrind
 
-## Exec
+## Exec API
+
+---
 
 ## Synchronization
+- RaceCondition
+- Shared Resources
+- Critical Section
+- Methods to avoid RaceCondition
+
+---
+
+## Synchronization Techniques
+### 1. Mutex
+### 2. Semaphore
+### 3. Spinlocks
+
+---
+
+
